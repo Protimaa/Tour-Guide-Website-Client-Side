@@ -30,7 +30,7 @@ const Services = () => {
 
             {/* adventure category  */}
             
-            <ServicesCategory items={adventure} title='Adventure' img ={adventureImg}></ServicesCategory>
+            <ServicesCategory items={adventure} title='adventure' img ={adventureImg}></ServicesCategory>
 
             {/* relaxation category  */}
             
