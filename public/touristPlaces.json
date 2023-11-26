@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "1",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Sundarbans Wildlife Cruise",
+    "touristPlace": "Sundarbans, Bangladesh",
+    "category": "adventure",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 120.00
+  },
+  {
+    "_id": "2",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "historical Dhaka Tour",
+    "touristPlace": "Dhaka, Bangladesh",
+    "category": "popular",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 80.00
+  },
+  {
+    "_id": "3",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Cox's Bazar Beach Retreat",
+    "touristPlace": "Cox's Bazar, Bangladesh",
+    "category": "relaxation",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 150.00
+  },
+  {
+    "_id": "4",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Rangamati Hill Tracts Trek",
+    "touristPlace": "Rangamati, Bangladesh",
+    "category": "adventure",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 180.00
+  },
+  {
+    "_id": "5",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Tea Gardens of Srimangal",
+    "touristPlace": "Srimangal, Bangladesh",
+    "category": "nature",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 100.00
+  },
+  {
+    "_id": "6",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Kuakata Sea View",
+    "touristPlace": "Kuakata, Bangladesh",
+    "category": "relaxation",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 120.00
+  },
+  {
+    "_id": "7",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Mahasthangarh Archaeological Site",
+    "touristPlace": "Bogura, Bangladesh",
+    "category": "offered",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 90.00
+  },
+  {
+    "_id": "8",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "St. Martin's Island Getaway",
+    "touristPlace": "St. Martin's Island, Bangladesh",
+    "category": "popular",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 200.00
+  },
+  {
+    "_id": "9",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Jamuna Future Park Family Fun",
+    "touristPlace": "Dhaka, Bangladesh",
+    "category": "popular",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 60.00
+  },
+  {
+    "_id": "10",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Kaptai Lake Boat Expedition",
+    "touristPlace": "Kaptai, Bangladesh",
+    "category": "nature",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.",
+    "price": 130.00
+  },
+  {
+    "_id": "11",
+    "image" : "https://images.unsplash.com/photo-1652801004958-37da98172f8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHN5bGhldCUyMGNvbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D",
+    "name": "Lalbagh Fort Exploration",
+    "touristPlace": "Dhaka, Bangladesh",
+    "category": "historical",
+    "date": "2023-12-01",
+    "description": "Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at anc",
+    "price": 130.00
+  }
+]
