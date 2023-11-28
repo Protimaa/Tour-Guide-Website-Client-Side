@@ -1,20 +1,52 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
+import { MdFavoriteBorder } from "react-icons/md";
+import useBook from "../../../hooks/useBook";
 
 // import logo from '../../../assets/logo2.JPG'
 const NavBar = () => {
+    const { user, logOut } = useContext(AuthContext);
+    const [book] = useBook();
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error));
+    }
+
     const navOptions = <>
-        <li><Link to="/">Home</Link></li>        
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/services">Services</Link></li>
-        <li><Link to="/order">Booked Service</Link></li>
+        <li><Link to="/order/adventure">Booked Service</Link></li>
+        <li><Link to="/secret">Secret</Link></li>
+        <li>
+            <Link to="/dashboard/book">
+                <button className="btn">
+                <MdFavoriteBorder className="mr-2"></MdFavoriteBorder>
+                    <div className="badge badge-secondary">+  {book.length}</div>
+                </button>
+            </Link>
+        </li>
+
         <li tabIndex={0}>
             <details>
                 <summary>Parent</summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-red-400">
                     <li><a>Submenu 1</a></li>
                     <li><a>Submenu 2</a></li>
                 </ul>
             </details>
         </li>
+        {
+            user ? <>
+                <span>{user?.displayName}</span>
+                <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+            </> : <>
+                <li><Link to="/login" >Login</Link></li>
+            </>
+        }
+
     </>
     return (
         <div>

@@ -26,7 +26,7 @@ const Services = () => {
 
             {/* offeres category  */}
             <SectionTitle heading={"Today's Offer"}></SectionTitle>
-            <ServicesCategory items={offered}></ServicesCategory>
+            <ServicesCategory items={offered}  ></ServicesCategory>
 
             {/* adventure category  */}
             
