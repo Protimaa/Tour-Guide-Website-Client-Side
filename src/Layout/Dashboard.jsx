@@ -2,11 +2,12 @@ import { NavLink, Outlet } from "react-router-dom";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaAd, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaUsers, FaUtensils } from "react-icons/fa";
 import useBook from "../hooks/useBook";
+import useAdmin from "../hooks/useAdmin";
 
 const Dashboard = () => {
     const [book] = useBook();
 
-    const isAdmin = true;
+    const [isAdmin] = useAdmin();
 
     return (
         <div className="flex">
