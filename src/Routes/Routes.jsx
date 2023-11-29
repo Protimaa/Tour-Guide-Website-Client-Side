@@ -12,6 +12,8 @@ import Secret from "../pages/Shared/Secret/Secret";
 import Dashboard from "../Layout/Dashboard";
 import Book from "../pages/Dashboard/Book/Book";
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
+import AdminRoute from "./AdminRoute";
+import AddItems from "../pages/Dashboard/AddItems/AddItems";
 
   export const router = createBrowserRouter([
     {
@@ -53,12 +55,16 @@ import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
           path: 'book',
           element: <Book></Book>,
         },
-
         // for admin 
+        
+        {
+          path: 'addItems',
+          element: <AdminRoute><AddItems></AddItems></AdminRoute>
+        },        
 
         {
           path: 'users',
-          element: <AllUsers></AllUsers>,
+          element: <AdminRoute><AllUsers></AllUsers></AdminRoute>,
         }
       ]
     }
