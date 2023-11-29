@@ -25,7 +25,6 @@ const ManageItems = () => {
              
                 console.log(res.data);
                 if (res.data.deletedCount > 0) {
-                    // refetch to update the ui
                     refetch();
                     Swal.fire({
                         position: "top-end",
@@ -42,9 +41,9 @@ const ManageItems = () => {
     }
 
     return (
-        <div>
+        <div className="bg-red-300 p-10 ">
             <SectionTitle heading="Manage All Items" ></SectionTitle>
-            <div>
+            <div className="bg-red-100 p-10 ">
                 <div className="overflow-x-auto">
                     <table className="table w-full">
                         {/* head */}

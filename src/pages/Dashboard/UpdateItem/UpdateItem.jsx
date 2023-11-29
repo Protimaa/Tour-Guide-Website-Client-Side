@@ -9,7 +9,7 @@ const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const UpdateItem = () => {
-    const {name, category, recipe, price, _id} = useLoaderData();
+    const {name, category, description, price, _id} = useLoaderData();
 
     const { register, handleSubmit } = useForm();
     const axiosPublic = useAxiosPublic();
@@ -52,9 +52,9 @@ const UpdateItem = () => {
     
     
     return (
-        <div>
-            <SectionTitle heading="Update an Item" subHeading="Refresh info"></SectionTitle>
-            <div>
+        <div className="bg-red-300 p-10">
+            <SectionTitle heading="Update an Item" ></SectionTitle>
+            <div className="bg-red-100 p-10">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-full my-6">
                         <label className="label">
@@ -74,19 +74,24 @@ const UpdateItem = () => {
                             <label className="label">
                                 <span className="label-text">Category*</span>
                             </label>
+
                             <select defaultValue={category} {...register('category', { required: true })}
                                 className="select select-bordered w-full">
                                 <option disabled value="default">Select a category</option>
-                                <option value="salad">Salad</option>
-                                <option value="pizza">Pizza</option>
-                                <option value="soup">Soup</option>
-                                <option value="dessert">Dessert</option>
-                                <option value="drinks">Drinks</option>
-                            </select>
+                                <option value="adventure">Adventure</option>
+                                <option value="relaxation">Relaxation</option>
+                                <option value="nature">Nature</option>
+                                <option value="historical">Historical</option>
+                                <option value="offered">Offered</option>
+                            </select>                           
+                                
                         </div>
 
-                        {/* price */}
-                        <div className="form-control w-full my-6">
+                        
+
+                    </div>
+                    {/* price */}
+                    <div className="form-control w-full my-6">
                             <label className="label">
                                 <span className="label-text">Price*</span>
                             </label>
@@ -97,14 +102,13 @@ const UpdateItem = () => {
                                 {...register('price', { required: true })}
                                 className="input input-bordered w-full" />
                         </div>
-
-                    </div>
-                    {/* recipe details */}
+                        
+                    {/* description */}
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Recipe Details</span>
+                            <span className="label-text">Description </span>
                         </label>
-                        <textarea defaultValue={recipe} {...register('recipe')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                        <textarea defaultValue={description} {...register('description')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
                     </div>
 
                     <div className="form-control w-full my-6">

@@ -67,11 +67,11 @@ import UpdateItem from "../pages/Dashboard/UpdateItem/UpdateItem";
           path: 'manageItems',
           element: <AdminRoute><ManageItems></ManageItems></AdminRoute>
         },
-        // {
-        //   path: 'updateItem/:id',
-        //   element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-        //   loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
-        // },
+        {
+          path: 'updateItem/:id',
+          element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
+          loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
+        },
         {
           path: 'users',
           element: <AdminRoute><AllUsers></AllUsers></AdminRoute>,
