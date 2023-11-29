@@ -4,11 +4,10 @@ import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { Link } from "react-router-dom";
 import useService from "../../../hooks/useService";
-// import useBook from "../../../hooks/useBook";
 
 
 const ManageItems = () => {
-    const [service , refetch] = useService();
+    const [service , ,  refetch] = useService();
     const axiosSecure = useAxiosSecure();
 
     const handleDeleteItem = (item) => {
@@ -23,7 +22,8 @@ const ManageItems = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 const res = await axiosSecure.delete(`/service/${item._id}`);
-                // console.log(res.data);
+             
+                console.log(res.data);
                 if (res.data.deletedCount > 0) {
                     // refetch to update the ui
                     refetch();
