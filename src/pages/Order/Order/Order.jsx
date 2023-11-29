@@ -28,7 +28,7 @@ const Order = () => {
     const relaxation = place.filter(item => item.category === 'relaxation');
     const nature = place.filter(item => item.category === 'nature');
     const historical = place.filter(item => item.category === 'historical');
-    const offered = place.filter(item => item.category === 'offered');
+    const popular = place.filter(item => item.category === 'popular');
     return (
         <div>
             <Helmet>
@@ -42,7 +42,7 @@ const Order = () => {
                     <Tab>Relaxation</Tab>
                     <Tab>Nature</Tab>
                     <Tab>Historical</Tab>
-                    <Tab>Offered</Tab>
+                    <Tab>Popular</Tab>
                 </TabList>
                 <TabPanel>
                    <OrderTab items={adventure}></OrderTab>
@@ -57,7 +57,7 @@ const Order = () => {
                    <OrderTab items={historical}></OrderTab>
                 </TabPanel>
                 <TabPanel>
-                   <OrderTab items={offered}></OrderTab>
+                   <OrderTab items={popular}></OrderTab>
                 </TabPanel>
                 
             </Tabs>

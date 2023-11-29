@@ -16,11 +16,16 @@ import AdminRoute from "./AdminRoute";
 import AddItems from "../pages/Dashboard/AddItems/AddItems";
 import ManageItems from "../pages/Dashboard/ManageItems/ManageItems";
 import UpdateItem from "../pages/Dashboard/UpdateItem/UpdateItem";
+import Payment from "../pages/Dashboard/Payment/Payment";
+import Community from "../pages/Home/Community/Community";
+import ContactUs from "../pages/Home/ContactUs/ContactUs";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 
   export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/', 
@@ -29,6 +34,14 @@ import UpdateItem from "../pages/Dashboard/UpdateItem/UpdateItem";
         {
           path: '/services',
           element: <Services></Services>
+        },
+        {
+          path: '/community',
+          element: <Community></Community>
+        },
+        {
+          path: '/contactUs',
+          element: <ContactUs></ContactUs>
         },
         {
           path: '/order/:category',
@@ -56,6 +69,10 @@ import UpdateItem from "../pages/Dashboard/UpdateItem/UpdateItem";
         {
           path: 'book',
           element: <Book></Book>,
+        },
+        {
+          path: 'payment',
+          element: <Payment></Payment>
         },
         // for admin 
         

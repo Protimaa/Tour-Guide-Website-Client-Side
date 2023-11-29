@@ -13,17 +13,16 @@ const CustomerStories = () => {
         <div>
             <section>
                 <SectionTitle
-
                     heading={"Customer stories"}>
                 </SectionTitle>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {
                         customerStories.map(customerStorie => <div key={customerStorie._id} className="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
-                            <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-44 rounded-xl bg-clip-border">
+                            <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-44 rounded-xl bg-clip-border justify-center flex items-center">
                                 <img
                                     src={customerStorie.image}
-                                    className="rounded-full object-cover w-full h-full"
+                                    className="rounded-full object-cover w-3/6 h-full "
                                 />
                             </div>
                             <div className="py-2 px-6">

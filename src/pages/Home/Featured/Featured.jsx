@@ -16,7 +16,7 @@ const Featured = () => {
                     <p>2024-12-01</p>
                     <p className="uppercase">WHERE CAN I GET SOME?</p>
                     <p>Explore the historical significance of Lalbagh Fort in Dhaka. Walk through its majestic corridors, marvel at ancient architecture, and discover the tales of bygone eras.</p>
-                    <button className="btn btn-outline border-0 border-b-4 mt-4">Order Now</button>
+                    {/* <button className="btn btn-outline border-0 border-b-4 mt-4">Order Now</button> */}
                 </div>
             </div>
         </div>

@@ -24,20 +24,18 @@ const UpdateItem = () => {
             }
         });
         if (res.data.success) {
-            // now send the menu item data to the server with the image url
-            const menuItem = {
+            const serviceItem = {
                 name: data.name,
                 category: data.category,
                 price: parseFloat(data.price),
-                recipe: data.recipe,
+                description: data.description,
                 image: res.data.data.display_url
             }
             // 
-            const menuRes = await axiosSecure.patch(`/menu/${_id}`, menuItem);
-            console.log(menuRes.data)
-            if(menuRes.data.modifiedCount > 0){
-                // show success popup
-                // reset();
+            const serviceRes = await axiosSecure.patch(`/service/${_id}`, serviceItem);
+            console.log(serviceRes.data)
+            if(serviceRes.data.modifiedCount > 0){
+                
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
@@ -58,12 +56,12 @@ const UpdateItem = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-full my-6">
                         <label className="label">
-                            <span className="label-text">Recipe Name*</span>
+                            <span className="label-text">Service Name*</span>
                         </label>
                         <input
                             type="text"
                             defaultValue={name}
-                            placeholder="Recipe Name"
+                            placeholder="Service Name"
                             {...register('name', { required: true })}
                             required
                             className="input input-bordered w-full" />
@@ -83,6 +81,7 @@ const UpdateItem = () => {
                                 <option value="nature">Nature</option>
                                 <option value="historical">Historical</option>
                                 <option value="offered">Offered</option>
+                                <option value="popular">Popular</option>
                             </select>                           
                                 
                         </div>
@@ -108,7 +107,7 @@ const UpdateItem = () => {
                         <label className="label">
                             <span className="label-text">Description </span>
                         </label>
-                        <textarea defaultValue={description} {...register('description')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                        <textarea defaultValue={description} {...register('description')} className="textarea textarea-bordered h-24" placeholder="Description"></textarea>
                     </div>
 
                     <div className="form-control w-full my-6">

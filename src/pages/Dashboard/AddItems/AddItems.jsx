@@ -5,7 +5,7 @@ import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 
-const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTIMG_KEY;
+const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const AddItems = () => {
@@ -79,6 +79,7 @@ const AddItems = () => {
                                 <option value="nature">Nature</option>
                                 <option value="historical">Historical</option>
                                 <option value="offered">Offered</option>
+                                <option value="popular">Popular</option>
                             </select>
                         </div>
 
@@ -103,7 +104,7 @@ const AddItems = () => {
                         <label className="label">
                             <span className="label-text">Service Description</span>
                         </label>
-                        <textarea {...register('description')} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+                        <textarea {...register('description')} className="textarea textarea-bordered h-24" placeholder="Service Description"></textarea>
                     </div>
 
                     <div className="form-control w-full my-6">

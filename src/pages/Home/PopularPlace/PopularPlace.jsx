@@ -1,6 +1,7 @@
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import TouristPlace from "../../Shared/TouristPlace/TouristPlace";
 import useService from "../../../hooks/useService";
+import { Link } from "react-router-dom";
 
 const PopularPlace = () => {
     const [service] = useService();
@@ -17,13 +18,18 @@ const PopularPlace = () => {
     // }, [])
     return (
         <section>
-            <SectionTitle heading={"Popular Place"}></SectionTitle>
+            <SectionTitle heading={"Popular Services"}></SectionTitle>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
                 {
                     popular.map(item => <TouristPlace key={item._id} item={item}></TouristPlace>)
                 }
             </div>
+            <Link to={"services"}>
+                <div className="flex justify-center items-center">
+                    <button className="btn btn-outline border-0 border-b-4 mt-4 ">See Our Services</button>
+                </div>
+            </Link>
         </section>
 
     );

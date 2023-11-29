@@ -18,6 +18,8 @@ const Home = () => {
             <Banner></Banner>
             <TourPlace></TourPlace>
             <PopularPlace></PopularPlace>
+
+            
             <Featured></Featured>
             <CustomerStories></CustomerStories>
         </div>

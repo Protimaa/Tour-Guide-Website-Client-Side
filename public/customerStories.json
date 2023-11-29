@@ -1,18 +1,18 @@
 [
     {
-      "_id": 1,
+      
       "image": "https://images.unsplash.com/photo-1587549259152-0361697a746e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8SGlsbCUyMFRyYWN0c3xlbnwwfHwwfHx8MA%3D%3D",
       "name": "Alice Johnson",
       "description": "My journey through Bangladesh was a tapestry of diverse experiences. From the bustling streets of Dhaka to the serene beauty of the Sundarbans, every moment was filled with warmth and hospitality. The historical sites like Lalbagh Fort and the archaeological wonders in Mahasthangarh left me in awe of Bangladesh's rich cultural heritage."
     },
     {
-      "_id": 2,
+      
       "image": "https://images.unsplash.com/photo-1587222318667-31212ce2828d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q294J3MlMjBCYXphcnxlbnwwfHwwfHx8MA%3D%3D",
       "name": "Eva Martinez",
       "description": "My visit to Cox's Bazar was a blissful escape. The world's longest natural sea beach, golden sands, and the vibrant beach town atmosphere were simply mesmerizing. Sampling delicious seafood, taking boat rides in the Bay of Bengal, and witnessing the sunrise and sunset at the beach were the highlights of my Bangladesh adventure."
     },
     {
-      "_id": 3,
+      
       "image": "https://images.unsplash.com/photo-1624635451380-2711aabe6460?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3lsaGV0fGVufDB8fDB8fHww",
       "name": "Bob Smith",
       "description": "Exploring the hill tracts of Bangladesh was a trekker's paradise. The lush green landscapes of Srimangal and the indigenous cultures in Rangamati were truly captivating. The tea gardens were a visual delight, and the traditional boat races on the Kaptai Lake added an extra layer of excitement to my unforgettable journey."

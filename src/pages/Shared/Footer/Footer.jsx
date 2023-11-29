@@ -1,4 +1,4 @@
-
+import logo from "../../../assets/logo.jpeg"
 
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
             <aside>
                 
                 <p className="font-bold text-3xl">
-                DP Tourist Guide 
+                <img src= { logo}  className="w-16 h-16 rounded-full"/>
                 </p>
                 <p>Copyright © 2023 - All right reserved</p>
             </aside>

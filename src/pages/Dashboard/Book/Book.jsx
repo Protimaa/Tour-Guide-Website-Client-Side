@@ -2,6 +2,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import useBook from "../../../hooks/useBook";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const Book = () => {
     const axiosSecure = useAxiosSecure();
@@ -32,7 +33,7 @@ const Book = () => {
                             });
                         }
                     })
-                    
+
             }
         });
     }
@@ -43,7 +44,9 @@ const Book = () => {
             <div className="flex justify-evenly mb-8">
                 <h2 className="text-4xl">Items: {book.length}</h2>
                 <h2 className="text-4xl">Total Price: {totalPrice}</h2>
-                <button className="btn btn-primary">Pay</button>
+                <Link to="/dashboard/payment">
+                    <button disabled={!book.length} className="btn btn-primary">Pay</button>
+                </Link>
             </div>
 
             <div className="overflow-x-auto">
