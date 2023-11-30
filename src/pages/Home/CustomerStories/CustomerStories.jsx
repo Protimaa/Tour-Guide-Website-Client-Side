@@ -5,7 +5,7 @@ const CustomerStories = () => {
     const [customerStories, setCustomerStories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://y-pi-jade.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setCustomerStories(data))
     }, [])

@@ -87,7 +87,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
         {
           path: 'updateItem/:id',
           element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
+          loader: ({params}) => fetch(`https://y-pi-jade.vercel.app/service/${params.id}`)
         },
         {
           path: 'users',

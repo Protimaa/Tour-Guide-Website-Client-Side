@@ -25,7 +25,7 @@ const Login = () => {
 
 
     useEffect(() => {
-        loadCaptchaEnginge(6);
+        loadCaptchaEnginge(3);
     }, [])
     const handleLogin = event => {
         event.preventDefault();
@@ -88,7 +88,7 @@ const Login = () => {
                                     name="password" placeholder="password" className="input input-bordered" required />
                                 
                             </div>
-                            <div className="form-control">
+                            <div className="form-control">   
                                 <label className="label">
                                     <LoadCanvasTemplate></LoadCanvasTemplate>
                                 </label>
